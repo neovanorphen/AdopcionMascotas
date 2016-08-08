@@ -1,0 +1,80 @@
+﻿@model IEnumerable<Adopcion.Models.Pet>
+
+@{
+    ViewBag.Title = "Buscar";
+}
+<br />
+<h2>Resultados</h2>
+<br />
+
+
+@foreach (var item in Model)
+{
+    <div class="panel">
+        <div class="row">
+
+            <div class="large-12 columns">
+                <div class="row">
+                    <div class="large-6 columns">
+
+                        <div class="display-label">
+                            <h5><strong>Nombre </strong></h5>
+                        </div>
+                        <div class="display-field">
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </div>
+
+                        <div class="display-label">
+                            <h5><strong>Fecha de Nacimiento</strong> </h5>
+                        </div>
+                        <div class="display-field">
+                            @item.BirthDate.ToShortDateString()
+                        </div>
+
+                        <div class="display-label">
+                            <h5><strong>Tipo</strong> </h5>
+                        </div>
+                        <div class="display-field">
+                            @Html.DisplayFor(modelItem => item.Type) 
+                        </div>
+
+                        <div class="display-label">
+                            <h5><strong>Raza</strong> </h5>
+                        </div>
+                        <div class="display-field">
+                            @Html.DisplayFor(modelItem => item.Race)
+                        </div>
+
+
+                        <div class="display-label">
+                            <h5><strong>Ciudad</strong> </h5>
+                        </div>
+                        <div class="display-field">
+                            @Html.DisplayFor(modelItem => item.City)
+                        </div>
+
+                        <a href="@Url.Action("Details", "Pet", new { id = item.ID})" class=" radius button  success large">Ver Detalles  <i class="fi-plus"></i></a>
+
+
+
+                    </div>
+                    <div class="large-6 columns">
+                        @if(@item.Type == 1)
+                        {
+                            <img class="th" src="~/Images/perro2.jpg" />
+                        }
+                        else
+                        {
+                            <img class="th" src="~/Images/gato.jpg" />
+                        }
+                        
+                    </div>
+                </div>
+
+
+             </div>
+            </div>
+        </div>
+
+        }
+

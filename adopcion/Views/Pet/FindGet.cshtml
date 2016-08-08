@@ -1,0 +1,75 @@
+﻿@model Adopcion.Models.Pet
+
+@{
+    ViewBag.Title = "Buscar";
+}
+
+<br />
+<br />
+<div class="row">
+
+
+    <div class="large-4 columns" >
+        <p class="th"><img src="~/Images/gato.jpg" /></p>
+        <p class="th"><img src="~/Images/perro2.jpg" /></p>
+        <p class="th"><img src="~/Images/Perro.jpg" /></p>
+        
+        
+
+    </div>
+
+    <aside class="large-7 columns ">
+        <br />
+        <h2>Buscar Mascota</h2>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+
+            <fieldset>
+                <div class="editor-label">
+                    Tipo
+                </div>
+
+                <div class="editor-field">
+                    @Html.DropDownListFor(model => model.Type, Adopcion.Utils.SelectListItemHelper.TypesList(), "--Seleccionar Tipo--")
+                    @Html.ValidationMessageFor(model => model.Type)
+                </div>
+
+                <div class="editor-label">
+                    Raza
+                </div>
+                <div class="editor-field">
+                    @Html.DropDownListFor(model => model.Race, Adopcion.Utils.SelectListItemHelper.RacesList(), "--Seleccionar Raza--")
+                    @Html.ValidationMessageFor(model => model.Race)
+                </div>
+
+
+                <div class="editor-label">
+                    Ciudad
+                </div>
+                <div class="editor-field">
+                    @Html.DropDownListFor(model => model.City, Adopcion.Utils.SelectListItemHelper.CitiesList(),"--Seleccionar Ciudad--")
+                    @Html.ValidationMessageFor(model => model.City)
+                </div>
+
+
+
+                <p>
+                    <button type="submit" class=" success radius">Buscar <i class="fi-magnifying-glass"></i></button>
+                    
+                </p>
+            </fieldset>
+        }
+
+        <div>
+            <a href="@Url.Action("Index", "Home")" class="button radius">Volver al Menú <i class="fi-home"></i></a>
+          
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+    </aside>
+
+</div>

@@ -1,0 +1,151 @@
+﻿@model Adopcion.Models.Pet
+
+@{
+    ViewBag.Title = "Adoptalos - Detalles";
+}
+
+<h2>Detalles</h2>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+<fieldset>
+    <div class="row">
+
+
+        <div class="large-12 columns">
+            <div class="row">
+                <div class="large-6 columns">
+
+                    <div class="display-label">
+                        <h5><strong>Nombre </strong></h5>
+                    </div>
+                    <div class="display-field">
+                        @Html.DisplayFor(model => model.Name)
+                    </div>
+
+                    <div class="display-label">
+                        <h5><strong>Fecha de Nacimiento</strong> </h5>
+                    </div>
+                    <div class="display-field">
+                        @Model.BirthDate.ToShortDateString()
+                    </div>
+
+                    <div class="display-label">
+                        <h5><strong>Tipo</strong> </h5>
+                    </div>
+                    <div class="display-field">
+                        @Html.DisplayFor(model=> model.Type)
+                        
+                    </div>
+
+                    <div class="display-label">
+                        <h5><strong>Raza</strong> </h5>
+                    </div>
+                    <div class="display-field">
+                        @Html.DisplayFor(model=> model.Race)
+                    </div>
+
+                    <div class="display-label">
+                        <h5><strong>Peso</strong> </h5>
+                    </div>
+                    <div class="display-field">
+                        @Html.DisplayFor(model=> model.Weight) Kg
+                    </div>
+
+                    <div class="display-label">
+                        <h5><strong>Altura</strong> </h5>
+                    </div>
+                    <div class="display-field">
+                        @Html.DisplayFor(model => model.Height)
+                    </div>
+
+                    <div class="display-label">
+                        <h5><strong>Ciudad</strong> </h5>
+                    </div>
+                    <div class="display-field">
+                        @Html.DisplayFor(model => model.City)
+                    </div>
+
+                    <div class="display-label">
+                        <h5><strong>Visitas</strong> </h5>
+                    </div>
+                    <div class="display-field">
+                        @Html.DisplayFor(model => model.VisitCount)
+                    </div>
+
+                    <div class="display-label">
+                        <h5><strong>Estado</strong> </h5>
+                    </div>
+                    <div class="display-field">
+                        @if (Model.Status == 0 )
+                        {
+                            <span class="success  round radius label">Disponible</span>
+                        }
+                        else
+                        {
+                            <span class="alert  round radius label">Adoptada</span>
+                        }
+                        
+                    </div>
+
+                    <div class="display-label">
+                        <h5><strong>Dueño Validado</strong></h5>
+                    </div>
+                    <div class="display-field">
+                        @if (Model.confirmedEmail == true)
+                        {
+                            <span class="success  round radius label">Válido</span>
+                        }
+                        else
+                        {
+                            <span class="alert  round radius label">No válido</span><small>  (No se puede adoptar mientras el dueño no sea validado).</small>
+                        }
+
+                    </div>
+           
+                    <br />
+                    <div>
+                        @if (Model.Status == 0 && Model.confirmedEmail == true)
+                        {
+                            <input type="submit" value="Adoptar" class="button radius success" />
+                        }
+                        else
+                        {
+                            <input type="submit" value="Adoptar" class="button disabled radius success" />
+                        }
+                        
+                        <a href="@Url.Action("Edit", "Pet", new { Id = @Model.ID})" class=" radius button  ">Editar     </a>
+
+                        
+                        <a style="background-color:black" href="@Url.Action("DisplayQuestions", "Question", new { Id = @Model.ID })" class=" radius button  ">Ver Consultas     </a>
+                       
+
+                    </div>
+
+
+                </div>
+                <div class="large-6 columns">
+                    <br />
+                    @if (Model.Type == 1)
+                    {
+                        <img class="th " src="~/Images/perro2.jpg" />
+                    }
+                    else
+                    {
+                        <img class="th " src="~/Images/gato.jpg" />
+                    }
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+}
+<div >
+    <div>
+        @{ Adopcion.Models.Question question = new Adopcion.Models.Question(); question.pet_ID = @Model.ID;}
+        @Html.Partial("~/Views/Question/_AddQuestion.cshtml", question)
+    </div>
+</div>
+

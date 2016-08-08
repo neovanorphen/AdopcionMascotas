@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Adopcion.Models.Question>
+
+@{
+    ViewBag.Title = "DisplayQuestions";
+}
+
+<br />
+<h2>Preguntas</h2>
+
+
+@foreach (var item in Model)
+{
+    <div class="panel">
+        <div class="row">
+
+            <div class="large-12 columns">
+                <div class="row">
+                    <div class="large-6 columns">
+
+                        <div class="display-label">
+                            <h5><strong>Nombre del interesado</strong></h5>
+                        </div>
+                        <div class="display-field">
+                            @Html.DisplayFor(modelItem => item.Interested_Name)
+                        </div>
+
+                        <div class="display-label">
+                            <h5><strong>Correo Electrónico </strong> </h5>
+                        </div>
+                        <div class="display-field">
+                            @item.Interested_Email
+                        </div>
+
+                        <div class="display-label">
+                            <h5><strong>Teléfono</strong> </h5>
+                        </div>
+                        <div class="display-field">
+                            @Html.DisplayFor(modelItem => item.Interested_Phone)
+                        </div>
+
+                        <div class="display-label">
+                            <h5><strong>Pregunta</strong> </h5>
+                        </div>
+                        <div class="display-field">
+                            @Html.DisplayFor(modelItem => item.Interested_Question)
+                        </div>
+
+
+
+                    </div>
+                   
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+}
+<a href="@Url.Action("Index", "Home")" class=" radius button large">Volver  <i class="fi-home"></i></a>
+
+
+

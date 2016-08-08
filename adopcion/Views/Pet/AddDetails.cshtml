@@ -1,0 +1,94 @@
+﻿@model Adopcion.Models.Pet
+
+@{
+    ViewBag.Title = "Adoptalos - Detalles";
+}
+<br/>
+<h2>Detalles</h2>
+
+<fieldset>
+    <div class="row">
+
+
+        <div class="large-12 columns">
+            <div class="row">
+                <div class="large-6 columns">
+
+                    <div class="display-label">
+                        <h5><strong>Nombre </strong></h5>
+                    </div>
+                    <div class="display-field">
+                        @Html.DisplayFor(model => model.Name)
+                    </div>
+
+                    <div class="display-label">
+                        <h5><strong>Fecha de Nacimiento</strong> </h5>
+                    </div>
+                    <div class="display-field">
+                        @Model.BirthDate.ToShortDateString()
+                    </div>
+
+                    <div class="display-label">
+                        <h5><strong>Tipo</strong> </h5>
+                    </div>
+                    <div class="display-field">
+                        @Html.DisplayFor(model => model.Type)
+                    </div>
+
+                    <div class="display-label">
+                        <h5><strong>Raza</strong> </h5>
+                    </div>
+                    <div class="display-field">
+                        @Html.DisplayFor(model => model.Race)
+                    </div>
+
+                    <div class="display-label">
+                        <h5><strong>Peso</strong> </h5>
+                    </div>
+                    <div class="display-field">
+                        @Html.DisplayFor(model => model.Weight)
+                    </div>
+
+                    <div class="display-label">
+                        <h5><strong>Altura</strong> </h5>
+                    </div>
+                    <div class="display-field">
+                        @Html.DisplayFor(model => model.Height)
+                    </div>
+
+                    <div class="display-label">
+                        <h5><strong>Ciudad</strong> </h5>
+                    </div>
+                    <div class="display-field">
+                        @Html.DisplayFor(model => model.City)
+                    </div>
+
+                    <div class="display-label">
+                        <h5><strong>Visitas</strong> </h5>
+                    </div>
+                    <div class="display-field">
+                        @Html.DisplayFor(model => model.VisitCount)
+                    </div>
+
+
+                </div>
+                <div class="large-6 columns">
+                    @if(@Model.Type ==1)
+                    {
+                        <img class="th" src="~/Images/perro2.jpg" />
+                    }
+                    else
+                    {
+                        <img class="th" src="~/Images/gato.jpg" />
+                    }
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="@Url.Action("Index", "Home")" class=" radius button  success large">Volver  </a>
+</fieldset>   
+
+

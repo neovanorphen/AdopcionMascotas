@@ -1,0 +1,43 @@
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\obj\Debug\Adopcion.csprojResolveAssemblyReference.cache
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\Adopcion.dll.config
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\Adopcion.dll
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\Adopcion.pdb
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\Microsoft.Web.Infrastructure.dll
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\Newtonsoft.Json.dll
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\System.Web.Helpers.dll
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\System.Web.Mvc.dll
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\System.Web.Razor.dll
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\System.Web.WebPages.Deployment.dll
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\System.Web.WebPages.dll
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\System.Web.WebPages.Razor.dll
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\Newtonsoft.Json.xml
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\System.Web.Helpers.xml
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\System.Web.Mvc.xml
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\System.Web.Razor.xml
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\System.Web.WebPages.xml
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\System.Web.WebPages.Deployment.xml
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\bin\System.Web.WebPages.Razor.xml
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\obj\Debug\Adopcion.dll
+c:\users\felipe\documents\visual studio 2013\Projects\Adopcion\Adopcion\obj\Debug\Adopcion.pdb
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\Adopcion.dll.config
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\Adopcion.dll
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\Adopcion.pdb
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\Newtonsoft.Json.dll
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\System.Web.Helpers.dll
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\System.Web.Mvc.dll
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\System.Web.Razor.dll
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\System.Web.WebPages.dll
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\System.Web.WebPages.Razor.dll
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\Newtonsoft.Json.xml
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\System.Web.Helpers.xml
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\System.Web.Mvc.xml
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\System.Web.Razor.xml
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\System.Web.WebPages.xml
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\bin\System.Web.WebPages.Razor.xml
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\obj\Debug\Adopcion.dll
+C:\Users\Felipe\Desktop\Adopcion\Adopcion\obj\Debug\Adopcion.pdb
